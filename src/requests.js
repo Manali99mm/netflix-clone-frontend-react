@@ -1,4 +1,4 @@
-const API_KEY = "8d2a93f6d65ab452667b0b3a9dabf9a2"
+const API_KEY = process.env.REACT_APP_API_KEY
 
 const requests = {
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
@@ -12,5 +12,3 @@ const requests = {
 }
 
 export default requests;
-
-//https://netflix-clone-5966a.web.app/
